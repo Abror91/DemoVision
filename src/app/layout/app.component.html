@@ -1,0 +1,33 @@
+ <div>
+   <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+      <h1>SimpleCRM</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button routerLink="/dashboard">Dashboard</a>
+        <a mat-button routerLink="/users">Employees</a>
+        <a *ngIf="!authenticated" mat-button routerLink="/login">Login</a>
+        <a *ngIf="authenticated" mat-button routerLink="/logout">Logout</a>
+      </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <span style="font-size: 12px;">Vision helps you to manager your business easily!</span>
+    </mat-toolbar-row>
+  </mat-toolbar> 
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard">Dashboard</a>
+      <a mat-list-item routerLink="/users">Users</a>
+      <a mat-list-item (click)="sidenav.close()">Close</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+    <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

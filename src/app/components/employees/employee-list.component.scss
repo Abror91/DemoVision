@@ -1,0 +1,26 @@
+employee-list {
+  .list-container {
+    width: 100%;
+    height: 100%;
+  }
+  /* Mobile styles */
+  @media only screen and(max-width:500px) {
+    .list-container {
+      background-color: #f09a9d;
+    }
+  }
+
+  /* Tablet styles */
+  @media only screen and(min-width:501px) and (max-width: 960px) {
+    .list-container {
+      background-color: #00a591;
+    }
+  }
+
+  /* Desktop styles */
+  @media only screen and(min-width:961px) {
+    .list-container {
+      background-color: #b2d6ff;
+    }
+  }
+}

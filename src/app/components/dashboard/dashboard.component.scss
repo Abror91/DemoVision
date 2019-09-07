@@ -1,0 +1,86 @@
+body {
+  font-size: 18px;
+}
+app-dashboard {
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    background: #3f69aa;
+    color: #ffffff;
+  }
+  .menu {
+    width: 900px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Righteous", cursive;
+  }
+  #graphics{
+    margin-left: auto;
+  }
+  #system {
+    margin-left: 20px;
+  }
+
+  /* header */
+  .header-container {
+    color: #5995da;
+    background-color: #d6e9fe;
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #subscribe,
+  #social-items {
+    align-self: flex-end;
+  }
+
+  /* Photo grids */
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+  }
+  .first-item {
+    order: 1;
+  }
+  .last-item {
+    order: -1;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #d6e9fe;
+    height: 200px;
+    flex: 1;
+  }
+  .footer-two {
+    flex: 1;
+  }
+  .footer-one,
+  .footer-three {
+    background-color: #5995da;
+    flex: initial;
+    width: 300px;
+  }
+}
